@@ -1,0 +1,32 @@
+.status_container {
+  overflow-y: scroll;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 600px;
+  border-radius: 0 0 8px 8px;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+  .image {
+    text-align: center;
+    padding: 10px;
+    // width: 20%;
+    img {
+      border: 2px solid crimson;
+      cursor: pointer;
+      width: 70px;
+      height: 70px;
+      border-radius: 50%;
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .status_container {
+    width: 95%;
+  }
+}

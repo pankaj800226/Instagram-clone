@@ -1,0 +1,60 @@
+.upload_bar {
+  background-color: whitesmoke;
+  width: 55%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  height: 50vh;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 2rem;
+  border-radius: 15px;
+  border: 1.5px dashed blueviolet;
+
+  .upload_section {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    > input {
+      display: none;
+    }
+    label {
+      background-color: blueviolet;
+      color: whitesmoke;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 10px 30px;
+      border-radius: 20px;
+      cursor: pointer;
+    }
+    button {
+      padding: 10px 30px;
+      border-radius: 20px;
+    }
+  }
+
+  .input_container {
+    width: 80%;
+    input[type="text"] {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 16px;
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .upload_bar {
+    width: 90%;
+  }
+}
+
+@media only screen and (max-width: 250px) {
+  .upload_section {
+    flex-direction: column;
+  }
+}
